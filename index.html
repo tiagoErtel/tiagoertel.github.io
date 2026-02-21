@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiago Ertel | Software Engineer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,6 +22,7 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact" class="btn-sm">Contact</a></li>
         </ul>
@@ -26,15 +36,22 @@
         <p>Building scalable systems with Java, Python, and SQL.</p>
         <div class="cta-group">
           <a href="#projects" class="btn">View My Work</a>
-          <a href="mailto:erteltiago0@gmail.com" class="btn-alt">Hire Me</a>
+          <a
+            href="#contact"
+            class="btn"
+            style="
+              background: transparent;
+              border: 2px solid var(--accent-color);
+              color: var(--accent-color);
+              margin-left: 10px;
+            "
+            >Hire Me</a
+          >
         </div>
       </section>
 
       <section id="about">
         <div class="about-container">
-          <div class="about-image">
-            <img src="assets/profile-pic.jpg" alt="Tiago Ertel" />
-          </div>
           <div class="about-text">
             <h2 class="section-title">About Me</h2>
             <p>
@@ -47,9 +64,8 @@
             <p>
               My experience at global leaders like
               <strong>Tramontina</strong> has shaped my approach to software: I
-              build for scalability, prioritize system integrity, and believe
-              that the best code is the kind that solves real-world business
-              challenges efficiently.
+              build for scalability and believe that the best code is the kind
+              that solves real-world business challenges.
             </p>
 
             <div class="skills-grid">
@@ -74,39 +90,130 @@
         </div>
       </section>
 
+      <section id="experience">
+        <h2 class="section-title">Professional Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 — Present</div>
+            <div class="timeline-content card">
+              <h3>Software Engineer</h3>
+              <p class="company">Tramontina | Remote / Brazil</p>
+              <ul>
+                <li>
+                  Developed backend logic for global ERP systems using
+                  <strong>Java</strong> and <strong>Genero BDL</strong>.
+                </li>
+                <li>
+                  Architected SQL queries and procedures in
+                  <strong>IBM Informix</strong> to optimize inventory tracking.
+                </li>
+                <li>
+                  Collaborated on data engineering tasks using
+                  <strong>Python/PySpark</strong> for BI reporting.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content card">
+              <h3>Full Stack Programador</h3>
+              <p class="company">Certification | Brazil</p>
+              <ul>
+                <li>
+                  Mastered modern web architectures, focusing on the integration
+                  between <strong>Spring Boot</strong> backends and responsive
+                  frontends.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title">Core Expertise</h2>
+        <div class="skills-wrapper">
+          <div class="skill-card card">
+            <i
+              class="fas fa-server"
+              style="
+                font-size: 2rem;
+                color: var(--accent-color);
+                margin-bottom: 1rem;
+              "
+            ></i>
+            <h3>Backend Engineering</h3>
+            <p>Java, Python, C#, Spring Boot</p>
+          </div>
+          <div class="skill-card card">
+            <i
+              class="fas fa-database"
+              style="
+                font-size: 2rem;
+                color: var(--accent-color);
+                margin-bottom: 1rem;
+              "
+            ></i>
+            <h3>Data Architecture</h3>
+            <p>SQL, Informix, PySpark, ETL</p>
+          </div>
+          <div class="skill-card card">
+            <i
+              class="fas fa-cloud"
+              style="
+                font-size: 2rem;
+                color: var(--accent-color);
+                margin-bottom: 1rem;
+              "
+            ></i>
+            <h3>Cloud & DevOps</h3>
+            <p>Docker, Git, CI/CD Pipelines</p>
+          </div>
+        </div>
+      </section>
+
       <section id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
-          <article class="project-card">
-            <div class="project-content">
-              <h3>Enterprise ERP Logic & Data Integration</h3>
-              <p class="project-tag">Java • Spring Boot • SQL (Informix)</p>
-              <p class="project-description">
-                Developed robust backend modules for supply chain management,
-                optimizing data flow between legacy systems and modern BI tools.
-              </p>
-              <div class="project-links">
-                <a href="#" class="btn-sm">Case Study</a>
-                <a href="https://github.com/yourusername" class="github-link"
-                  >GitHub</a
-                >
-              </div>
+          <article class="project-card card">
+            <h3>Enterprise ERP Logic</h3>
+            <p class="project-tag">Java • Spring Boot • SQL</p>
+            <p class="project-description">
+              Developed robust backend modules for supply chain management,
+              optimizing data flow between legacy systems and modern BI tools.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn-sm">Case Study</a>
+              <a
+                href="https://github.com/tiagoertel"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+                >GitHub</a
+              >
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-content">
-              <h3>Big Data ETL Pipeline</h3>
-              <p class="project-tag">Python • PySpark • Databricks</p>
-              <p class="project-description">
-                Built a scalable data pipeline to process large datasets,
-                transforming raw enterprise data into actionable insights for
-                strategic decision-making.
-              </p>
-              <div class="project-links">
-                <a href="#" class="btn-sm">View Architecture</a>
-                <a href="#" class="github-link">GitHub</a>
-              </div>
+          <article class="project-card card">
+            <h3>Big Data ETL Pipeline</h3>
+            <p class="project-tag">Python • PySpark • Databricks</p>
+            <p class="project-description">
+              Built a scalable data pipeline to process large datasets,
+              transforming raw enterprise data into actionable insights.
+            </p>
+            <div class="project-links">
+              <a href="#" class="btn-sm">Architecture</a>
+              <a
+                href="https://github.com/tiagoertel"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+                >GitHub</a
+              >
             </div>
           </article>
         </div>
@@ -116,11 +223,10 @@
         <div class="contact-header">
           <h2 class="section-title">Get In Touch</h2>
           <p>
-            Currently available for freelance opportunities and backend
+            Currently based in Dublin. Available for backend and data
             consulting.
           </p>
         </div>
-
         <div class="contact-wrapper">
           <div class="contact-form">
             <form id="my-form">
@@ -150,20 +256,18 @@
                   name="message"
                   id="message"
                   rows="5"
-                  placeholder="Tell me about your project or technical challenge..."
+                  placeholder="Tell me about your project..."
                   required
                 ></textarea>
               </div>
               <button type="submit" id="submit-btn" class="btn">
                 Send Message
               </button>
-              <p id="status"></p>
+              <p id="status" style="margin-top: 1rem; font-weight: bold"></p>
             </form>
           </div>
-
           <div class="contact-info">
             <h3>Direct Channels</h3>
-            <p>Preferred for quick inquiries:</p>
             <ul class="contact-links">
               <li>
                 <strong>Email:</strong>
@@ -174,12 +278,16 @@
                 <a
                   href="https://linkedin.com/in/tiago-ertel-7a6451247"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >tiago-ertel</a
                 >
               </li>
               <li>
                 <strong>GitHub:</strong>
-                <a href="https://github.com/tiagoertel" target="_blank"
+                <a
+                  href="https://github.com/tiagoertel"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   >tiagoertel</a
                 >
               </li>
@@ -191,8 +299,9 @@
     </main>
 
     <footer>
-      <p>&copy; 2026 Tiago Ertel | Dublin, Ireland</p>
+      <p>&copy; 2026 Tiago Ertel | Built with Code & Coffee</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
