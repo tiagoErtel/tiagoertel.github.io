@@ -20,6 +20,19 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
   margin: 0;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.card,
+header,
+input,
+textarea {
+  transition:
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    color 0.4s ease;
 }
 
 section {
@@ -384,4 +397,76 @@ footer {
 nav a.active {
   color: var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
+}
+
+.cursor {
+  color: var(--accent-color);
+  font-weight: bold;
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.subtitle {
+  min-height: 1.6em;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.repo-status {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--secondary-text);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.repo-status i {
+  color: var(--accent-color);
+  margin-right: 4px;
+}
+
+.last-updated {
+  margin-left: auto;
+  font-style: italic;
+}
+
+body.light-mode {
+  --bg-color: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-darker: #e2e8f0;
+  --text-color: #0f172a;
+  --secondary-text: #475569;
+  --border-color: #cbd5e1;
+  --accent-color: #0284c7;
+}
+
+#theme-toggle {
+  background: none;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#theme-toggle:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
 }
