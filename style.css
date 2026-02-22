@@ -405,6 +405,12 @@ nav a.active {
   border-bottom: 2px solid var(--accent-color);
 }
 
+nav a.btn-sm.active {
+  color: #ffffff !important;
+  border-bottom: none;
+  opacity: 0.9;
+}
+
 .cursor {
   color: var(--accent-color);
   font-weight: bold;
