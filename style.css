@@ -6,7 +6,7 @@
   --accent-color: #38bdf8;
   --secondary-text: #94a3b8;
   --border-color: #334155;
-  --header-bg: rgba(15, 23, 42, 0.9); /* Added for the navbar */
+  --header-bg: rgba(15, 23, 42, 0.9);
   --section-padding: 6rem 10%;
   --transition: 0.3s ease;
 }
@@ -73,7 +73,7 @@ header {
   padding: 1.5rem 10%;
   position: sticky;
   top: 0;
-  background: var(--header-bg); /* Changed from hardcoded rgba */
+  background: var(--header-bg);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
@@ -116,7 +116,7 @@ nav a:hover {
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
-  color: var(--text-color); /* Added so it flips in light mode */
+  color: var(--text-color);
 }
 
 .logo span {
@@ -145,7 +145,7 @@ h1 {
 
 .btn {
   background: var(--accent-color);
-  color: #ffffff; /* Forced white so it always looks good on blue */
+  color: #ffffff;
   padding: 0.8rem 2rem;
   border-radius: 5px;
   text-decoration: none;
@@ -238,7 +238,7 @@ h1 {
 
 .btn-sm {
   background: var(--accent-color);
-  color: #ffffff; /* Forced white for consistency */
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -332,10 +332,10 @@ input,
 textarea {
   width: 100%;
   padding: 0.8rem;
-  background: var(--bg-darker); /* Differentiates input from the card */
+  background: var(--bg-darker);
   border: 1px solid var(--border-color);
   border-radius: 6px;
-  color: var(--text-color); /* Fixed invisible text issue */
+  color: var(--text-color);
   font-family: inherit;
   box-sizing: border-box;
 }
@@ -456,7 +456,7 @@ body.light-mode {
   --secondary-text: #475569;
   --border-color: #cbd5e1;
   --accent-color: #0284c7;
-  --header-bg: rgba(248, 250, 252, 0.9); /* Added for the navbar */
+  --header-bg: rgba(248, 250, 252, 0.9);
 }
 
 #theme-toggle {
@@ -475,5 +475,5 @@ body.light-mode {
 
 #theme-toggle:hover {
   background: var(--accent-color);
-  color: #ffffff; /* Forced white so hover looks clean */
+  color: #ffffff;
 }
