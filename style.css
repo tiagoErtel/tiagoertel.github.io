@@ -160,6 +160,10 @@ h1 {
   transform: scale(1.05);
 }
 
+.btn i {
+  margin-right: 8px;
+}
+
 .about-container {
   display: flex;
   align-items: center;

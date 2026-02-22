@@ -85,7 +85,7 @@ window.addEventListener("scroll", () => {
 });
 
 const textElement = document.getElementById("typewriter");
-const words = ["Software Engineer", "Backend Specialist", "Data Engineer"];
+const words = ["Software Engineer", "Backend Developer", "Data Engineer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
