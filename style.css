@@ -6,6 +6,7 @@
   --accent-color: #38bdf8;
   --secondary-text: #94a3b8;
   --border-color: #334155;
+  --header-bg: rgba(15, 23, 42, 0.9); /* Added for the navbar */
   --section-padding: 6rem 10%;
   --transition: 0.3s ease;
 }
@@ -28,11 +29,15 @@ body {
 .card,
 header,
 input,
-textarea {
+textarea,
+.btn,
+.btn-sm,
+nav a {
   transition:
     background-color 0.4s ease,
     border-color 0.4s ease,
-    color 0.4s ease;
+    color 0.4s ease,
+    transform var(--transition);
 }
 
 section {
@@ -68,7 +73,7 @@ header {
   padding: 1.5rem 10%;
   position: sticky;
   top: 0;
-  background: rgba(15, 23, 42, 0.9);
+  background: var(--header-bg); /* Changed from hardcoded rgba */
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
@@ -111,6 +116,7 @@ nav a:hover {
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
+  color: var(--text-color); /* Added so it flips in light mode */
 }
 
 .logo span {
@@ -139,7 +145,7 @@ h1 {
 
 .btn {
   background: var(--accent-color);
-  color: var(--bg-color);
+  color: #ffffff; /* Forced white so it always looks good on blue */
   padding: 0.8rem 2rem;
   border-radius: 5px;
   text-decoration: none;
@@ -232,7 +238,7 @@ h1 {
 
 .btn-sm {
   background: var(--accent-color);
-  color: var(--bg-color);
+  color: #ffffff; /* Forced white for consistency */
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -326,10 +332,10 @@ input,
 textarea {
   width: 100%;
   padding: 0.8rem;
-  background: var(--bg-color);
+  background: var(--bg-darker); /* Differentiates input from the card */
   border: 1px solid var(--border-color);
   border-radius: 6px;
-  color: white;
+  color: var(--text-color); /* Fixed invisible text issue */
   font-family: inherit;
   box-sizing: border-box;
 }
@@ -443,13 +449,14 @@ nav a.active {
 }
 
 body.light-mode {
-  --bg-color: #f1f5f9;
+  --bg-color: #f8fafc;
   --bg-card: #ffffff;
-  --bg-darker: #e2e8f0;
+  --bg-darker: #f1f5f9;
   --text-color: #0f172a;
   --secondary-text: #475569;
   --border-color: #cbd5e1;
   --accent-color: #0284c7;
+  --header-bg: rgba(248, 250, 252, 0.9); /* Added for the navbar */
 }
 
 #theme-toggle {
@@ -468,5 +475,5 @@ body.light-mode {
 
 #theme-toggle:hover {
   background: var(--accent-color);
-  color: var(--bg-color);
+  color: #ffffff; /* Forced white so hover looks clean */
 }
