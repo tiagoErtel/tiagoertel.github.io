@@ -64,7 +64,8 @@ document.querySelectorAll("section, .card").forEach((el) => {
 });
 
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
+const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
   let current = "";
@@ -76,7 +77,7 @@ window.addEventListener("scroll", () => {
     }
   });
 
-  navLinks.forEach((link) => {
+  navItems.forEach((link) => {
     link.classList.remove("active");
     if (link.getAttribute("href").includes(current)) {
       link.classList.add("active");
@@ -172,4 +173,23 @@ themeToggle.addEventListener("click", () => {
   }
 
   localStorage.setItem("theme", theme);
+});
+
+const menuToggle = document.querySelector(".mobile-menu-toggle");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  // Switch icon between bars and X
+  const icon = menuToggle.querySelector("i");
+  icon.classList.toggle("fa-bars");
+  icon.classList.toggle("fa-times");
+});
+
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    const icon = menuToggle.querySelector("i");
+    icon.classList.add("fa-bars");
+    icon.classList.remove("fa-times");
+  });
 });
