@@ -116,6 +116,10 @@ nav a:hover {
   color: var(--accent-color);
 }
 
+nav .btn-sm:hover {
+  color: white !important;
+}
+
 .nav-spacer,
 .mobile-menu-toggle {
   display: none;
