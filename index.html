@@ -267,47 +267,107 @@
       <section id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
-          <article class="project-card card">
-            <h3>Enterprise ERP Logic</h3>
-            <p class="project-tag">Java • Spring Boot • SQL</p>
+          <article class="card" data-repo="tiagoertel/gui4me">
+            <span class="project-tag">Full Stack & Data Engineering</span>
+            <h3>gui4me</h3>
+            <div class="repo-status">
+              <span><i class="fas fa-code-branch"></i> Java / Spring Boot</span>
+              <span><i class="fas fa-layer-group"></i> React + PostgreSQL</span>
+            </div>
+            <div class="repo-status">
+              <span class="stars"><i class="fas fa-star"></i> --</span>
+              <span class="forks"><i class="fas fa-code-branch"></i> --</span>
+              <span class="last-updated">Updating...</span>
+            </div>
+
             <p class="project-description">
-              Developed robust backend modules for supply chain management,
-              optimizing data flow between legacy systems and modern BI tools.
+              A smart expense management platform that uses
+              <strong>OCR technology</strong> to scan invoices and parse
+              line-item data into a relational database.
             </p>
+            <ul
+              style="
+                color: var(--secondary-text);
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+                padding-left: 1.2rem;
+              "
+            >
+              <li>
+                Built a <strong>collaborative price-index</strong> allowing
+                users to compare product prices across different retailers in
+                real-time.
+              </li>
+              <li>
+                Architected a data pipeline to extract store, product, and tax
+                information from unstructured receipt data.
+              </li>
+              <li>
+                Containerized with <strong>Docker</strong> for seamless
+                deployment on a VPS, ensuring high availability.
+              </li>
+            </ul>
             <div class="project-links">
-              <a href="#" class="btn-sm">Case Study</a>
-              <a
-                href="https://github.com/tiagoertel"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="github-link"
-                >GitHub</a
+              <a href="#" class="btn-sm">View Demo</a>
+              <a href="https://github.com/tiagoertel/gui4me" class="github-link"
+                ><i class="fab fa-github"></i> Source Code</a
               >
             </div>
           </article>
 
-          <article class="project-card card">
-            <h3>Big Data ETL Pipeline</h3>
-            <p class="project-tag">Python • PySpark • Databricks</p>
+          <article class="card">
+            <span class="project-tag">Enterprise Systems</span>
+            <h3>ERP Billing & Logistics Engine</h3>
+            <div class="repo-status">
+              <span><i class="fas fa-server"></i> Genero BDL / C#</span>
+              <span><i class="fas fa-database"></i> IBM Informix SQL</span>
+            </div>
             <p class="project-description">
-              Built a scalable data pipeline to process large datasets,
-              transforming raw enterprise data into actionable insights.
+              Optimized and maintained critical financial modules for a global
+              distribution network, focusing on automated invoice generation and
+              tax compliance logic.
             </p>
+            <ul
+              style="
+                color: var(--secondary-text);
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+                padding-left: 1.2rem;
+              "
+            >
+              <li>
+                Refactored legacy stored procedures, reducing invoice processing
+                time for high-volume billing cycles.
+              </li>
+              <li>
+                Implemented secure data bridges between
+                <strong>Informix SQL</strong> and <strong>C#</strong> services
+                for real-time inventory tracking.
+              </li>
+              <li>
+                Collaborated with the infrastructure team to ensure 99.9% uptime
+                for billing services during peak periods.
+              </li>
+            </ul>
             <div class="project-links">
-              <a href="#" class="btn-sm">Architecture</a>
-              <a
-                href="https://github.com/tiagoertel"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="github-link"
-                >GitHub</a
+              <span
+                style="
+                  font-size: 0.85rem;
+                  font-style: italic;
+                  color: var(--accent-color);
+                "
               >
+                <i class="fas fa-lock"></i> Proprietary Enterprise Software
+              </span>
             </div>
           </article>
 
-          <article class="project-card card" data-repo="tiagoertel/gui4me">
-            <h3>Big Data ETL Pipeline</h3>
-            <p class="project-tag">Python • PySpark</p>
+          <article
+            class="project-card card"
+            data-repo="tiagoertel/sentinel-data-pipeline"
+          >
+            <span class="project-tag">Data Engineering & BI</span>
+            <h3>SentinelData: Enterprise ETL Pipeline</h3>
 
             <div class="repo-status">
               <span class="stars"><i class="fas fa-star"></i> --</span>
@@ -315,14 +375,31 @@
               <span class="last-updated">Updating...</span>
             </div>
 
-            <p class="project-description">...</p>
+            <p class="project-description">
+              A robust data pipeline designed to handle high-volume retail
+              transactions. It simulates the extraction of ERP billing data,
+              performs complex transformations in <strong>Python</strong>, and
+              loads structured data into <strong>PostgreSQL</strong> for BI
+              analysis.
+            </p>
+
             <div class="project-links">
               <a
-                href="https://github.com/tiagoertel/gui4me"
+                href="https://github.com/tiagoertel/sentinel-data-pipeline"
                 class="btn-sm"
                 target="_blank"
                 >View Repo</a
               >
+              <span
+                class="tech-stack-mini"
+                style="
+                  font-size: 0.8rem;
+                  margin-left: 10px;
+                  color: var(--secondary-text);
+                "
+              >
+                Java • Python • SQL • Docker
+              </span>
             </div>
           </article>
         </div>
